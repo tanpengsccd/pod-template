@@ -24,13 +24,13 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'HWZSDK/**/{AppDelegate}.h'
   # s.vendored_frameworks = 'HWZSDK/**/*.framework' 
   # s.vendored_libraries = 'HWZSDK/**/*.a'
-  s.source_files = '${POD_NAME}/Classes/**/*.{swift,pch,h,m,mm}'
+  s.source_files = '${POD_NAME}/**/*.{swift,pch,h,m,mm}'
   s.resource_bundles = {
     '${POD_NAME}' => ['${POD_NAME}/Assets/**/*', '${POD_NAME}/Classes/**/*.{xib,storyboard,xcassets,png,jpg,jpeg,gif,txt,json,xml,mp4,avi,wmv,mkv,mp3,m4a,aac,wma}']
   }
   s.static_framework = true  #依赖库是静态库也会导致必须此库是静态库
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'WZ_mediator'
+  # s.dependency 'WZ_mediator'
 
   # s.xcconfig = {
     # 'ENABLE_BITCODE' => 'NO' ,
