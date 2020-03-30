@@ -50,9 +50,11 @@ module Pod
 
       `mv ./templates/swift/* ./`
 
+      # make a swift to show dir 
+      `touch Pod/ReplaceMe.swift`
       # There has to be a single file in the Classes dir
       # or a framework won't be created
-      `touch Pod/Classes/ReplaceMe.swift`
+      `touch Pod/Classes/ReplaceMeInClasses.swift`
 
       # The Podspec should be 8.0 instead of 7.0
       text = File.read("NAME.podspec")
